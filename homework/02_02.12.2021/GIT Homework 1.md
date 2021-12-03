@@ -1,6 +1,7 @@
 #GIT Homework 1
 
-##JSON
+ ##JSON
+
  4. Создать внешний репозиторий c названием JSON.
  5. Клонировать репозиторий JSON на локальный компьютер: `git clone https://github.com/frolov-d/JSON.git`
  6. Внутри локального JSON создать файл “new.json”: `cd JSON`, `touch new.json`
@@ -20,7 +21,8 @@
  20. Синхронизировать внешний и локальный репозиторий JSON: `git pull`
 
 
-##XML
+ ##XML
+
  21. Создать внешний репозиторий c названием XML.
  22. Клонировать репозиторий XML на локальный компьютер: `git clone https://github.com/frolov-d/XML.git`
  23. Внутри локального XML создать файл “new.xml”: `cd XML`, `touch new.xml`
@@ -41,6 +43,7 @@
  38. Синхронизировать внешний и локальный репозиторий XML: `git pull`
  
  ##TXT
+ 
  1. Создать внешний репозиторий c названием TXT.
  2. Клонировать репозиторий TXT на локальный компьютер: `git clone https://github.com/frolov-d/TXT.git`
  3. Внутри локального TXT создать файл “new.txt”: `cd TXT`, `touch new.txt`
