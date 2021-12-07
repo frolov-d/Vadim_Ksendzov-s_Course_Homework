@@ -10,13 +10,13 @@
     - Mobile testing `git branch mobile_testing`
 
 2. Запушить все ветки на внешний репозиторий:
-`git push -u origin postman`
-`git push -u origin jmeter`
-`git push -u origin check_lists`
-`git push -u origin bug_reports`
-`git push -u origin sql`
-`git push -u origin charles`
-`git push -u origin mobile_testing`
+    `git push -u origin postman`
+    `git push -u origin jmeter`
+    `git push -u origin check_lists`
+    `git push -u origin bug_reports`
+    `git push -u origin sql`
+    `git push -u origin charles`
+    `git push -u origin mobile_testing`
 
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта: `git checkout bug_reports`, ` touch bug_report.txt`, `vim bug_report.txt`
 4. Запушить структуру багрепорта на внешний репозиторий: `git add .`, `git commit -m "bug_report"`, `git push`
