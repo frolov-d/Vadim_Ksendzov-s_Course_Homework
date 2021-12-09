@@ -18,7 +18,7 @@
     - `git push -u origin charles`
     - `git push -u origin mobile_testing`
 	
-	или `git push --all origin`
+	или `git push -u origin --all`
 
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта: `git checkout bug_reports`, ` touch bug_report.txt`, `vim bug_report.txt`
 4. Запушить структуру багрепорта на внешний репозиторий: `git add .`, `git commit -m "bug_report"`, `git push`
