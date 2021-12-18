@@ -323,14 +323,20 @@ pm.test("qa_salary_after_12_months from response equals salary*2.7 from request"
 17. Проверить, что параметр qa_salary_after_1.5_year равен salary*3.3 из request (salary забрать из request.)
 ```javascript
 pm.test("qa_salary_after_1.5_year from response equals salary*3.3 from request", () => {
-    pm.expect(responseJson).to.have.property("qa_salary_after_1.5_year").to.eql(parseInt(requestParams.salary) * 3.3);
+    pm.expect(responseJson["qa_salary_after_1.5_year"]).to.eql(parseInt(requestParams.salary) * 3.3);
 });
+// pm.test("qa_salary_after_1.5_year from response equals salary*3.3 from request", () => {
+//    pm.expect(responseJson).to.have.property("qa_salary_after_1.5_year").to.eql(parseInt(requestParams.salary) * 3.3);
+// });
 ```
 18. Проверить, что параметр qa_salary_after_3.5_years равен salary*3.8 из request (salary забрать из request.)
 ```javascript
 pm.test("qa_salary_after_3.5_years from response equals salary*3.8 from request", () => {
-    pm.expect(responseJson).to.have.property("qa_salary_after_3.5_years").to.eql(parseInt(requestParams.salary) * 3.8);
+    pm.expect(responseJson["qa_salary_after_3.5_years"]).to.eql(parseInt(requestParams.salary) * 3.8);
 });
+// pm.test("qa_salary_after_3.5_years from response equals salary*3.8 from request", () => {
+//     pm.expect(responseJson).to.have.property("qa_salary_after_3.5_years").to.eql(parseInt(requestParams.salary) * 3.8);
+// });
 ```
 19. Проверить, что в параметре person, 1-й элемент из u_name равен salary из request (salary забрать из request.)
 ```javascript
