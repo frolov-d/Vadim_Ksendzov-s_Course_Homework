@@ -5,7 +5,7 @@
 2. Статус код 200
 ```javascript
 pm.test("Status code is 200", function () {
-		pm.response.to.have.status(200);
+	pm.response.to.have.status(200);
 });
 ```
 3. Проверить, что в body приходит правильный string.
@@ -14,8 +14,8 @@ pm.test("Status code is 200", function () {
 //     pm.expect(pm.response.text()).to.include("This is the first responce from server!");
 // });
 pm.test("Body matches string", function () {
-    	var responseText = pm.response.text();
-    	pm.expect(responseText).to.be.a("string");
+    var responseText = pm.response.text();
+    pm.expect(responseText).to.be.a("string");
 });
 ```
 
@@ -26,7 +26,7 @@ request form data: name: str, age: int, salary: int)
 2. Статус код 200
 ```javascript
 pm.test("Status code is 200", () => {
-    	pm.response.to.have.status(200);
+    pm.response.to.have.status(200);
 });
 ```
 3. Спарсить response body в json.
@@ -36,21 +36,21 @@ var responseJson = pm.response.json();
 4. Проверить, что name в ответе равно name s request (name вбить руками.)
 ```javascript
 pm.test("Name is Dmitry", () => {
-    	pm.expect(responseJson.name).to.eql("Dmitry");
+    pm.expect(responseJson.name).to.eql("Dmitry");
 });
 ```
 5. Проверить, что age в ответе равно age s request (age вбить руками.)
 ```javascript
 // console.log(typeof(responseJson.age)); - to check if age is a String type
 pm.test("Age is 31", () => {
-    	pm.expect(responseJson.age).to.eql("31");
+    pm.expect(responseJson.age).to.eql("31");
 });
 ```
 6. Проверить, что salary в ответе равно salary s request (salary вбить руками.)
 ```javascript
 // console.log(typeof(responseJson.salary)); - to check if salary is a Number
 pm.test("Salary is 1000", () => {
-    	pm.expect(responseJson.salary).to.eql(1000);
+    pm.expect(responseJson.salary).to.eql(1000);
 });
 ```
 7. Спарсить request.
@@ -60,7 +60,7 @@ var requestBody = request.data;
 8. Проверить, что name в ответе равно name s request (name забрать из request.)
 ```javascript
 pm.test("Name from response equals name from request", () => {
-    	pm.expect(responseJson.name).to.eql(requestBody.name);
+    pm.expect(responseJson.name).to.eql(requestBody.name);
 });
 // pm.test("Name from response equals name from request (manually)", () => {
 //     pm.expect("Dmitry").to.eql(requestBody.name);
@@ -69,13 +69,13 @@ pm.test("Name from response equals name from request", () => {
 9. Проверить, что age в ответе равно age s request (age забрать из request.)
 ```javascript
 pm.test("Age from response equals age from request", () => {
-    	pm.expect(responseJson.age).to.eql(requestBody.age);
+    pm.expect(responseJson.age).to.eql(requestBody.age);
 });
 ```
 10. Проверить, что salary в ответе равно salary s request (salary забрать из request.)
 ```javascript
 pm.test("Salary from response equals salary from request", () => {
-		pm.expect(parseInt(responseJson.salary)).to.eql(parseInt(requestBody.salary));
+	pm.expect(parseInt(responseJson.salary)).to.eql(parseInt(requestBody.salary));
 });
 ```
 11. Вывести в консоль параметр family из response.
@@ -85,7 +85,7 @@ console.log(responseJson.family);
 12. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
 ```javascript
 pm.test("Salary in 4 years from response equals salary*4", () => {
-		pm.expect(responseJson.family.u_salary_1_5_year).to.eql(requestBody.salary * 4);
+	pm.expect(responseJson.family.u_salary_1_5_year).to.eql(requestBody.salary * 4);
 });
 ```
 
@@ -96,7 +96,7 @@ params: name: str, age: int, salary: int)
 2. Статус код 200
 ```javascript
 pm.test("Status code is 200", () => {
-    	pm.response.to.have.status(200);
+    pm.response.to.have.status(200);
 });
 ```
 3. Спарсить response body в json.
@@ -110,19 +110,19 @@ var requestParams = pm.request.url.query.toObject();
 5. Проверить, что name в ответе равно name s request (name забрать из request.)
 ```javascript
 pm.test("Name from response equals name from request", () => {
-    	pm.expect(responseJson.name).to.eql(requestParams.name);
+    pm.expect(responseJson.name).to.eql(requestParams.name);
 });
 ```
 6. Проверить, что age в ответе равно age s request (age забрать из request.)
 ```javascript
 pm.test("Age from response equals age from request", () => {
-    	pm.expect(responseJson.age).to.eql(requestParams.age);
+    pm.expect(responseJson.age).to.eql(requestParams.age);
 });
 ```
 7. Проверить, что salary в ответе равно salary s request (salary забрать из request.)
 ```javascript
 pm.test("Salary from response equals salary from request", () => {
-    	pm.expect(responseJson.salary).to.eql(parseInt(requestParams.salary));
+    pm.expect(responseJson.salary).to.eql(parseInt(requestParams.salary));
 });
 ```
 8. Вывести в консоль параметр family из response.
@@ -132,7 +132,7 @@ console.log(responseJson.family);
 9. Проверить, что у параметра dog есть параметры name.
 ```javascript
 pm.test("Dog parameter has a Name parameter", () => {
-    	pm.expect(pm.response.json("dog")).to.have.property("name");
+    pm.expect(pm.response.json("dog")).to.have.property("name");
 });
 // pm.test("Dog parameter has a Name parameter", () => {
 //     pm.expect(responseJson.family.pets.dog).to.have.property("name");
@@ -141,19 +141,19 @@ pm.test("Dog parameter has a Name parameter", () => {
 10. Проверить, что у параметра dog есть параметры age.
 ```javascript
 pm.test("Dog parameter has an Age parameter", () => {
-    	pm.expect(pm.response.json("dog")).to.have.property("age");
+    pm.expect(pm.response.json("dog")).to.have.property("age");
 });
 ```
 11. Проверить, что параметр name имеет значение Luky.
 ```javascript
 pm.test("Name equals 'Luky'", () => {
-    	pm.expect(responseJson.family.pets.dog.name).to.eql("Luky");
+    pm.expect(responseJson.family.pets.dog.name).to.eql("Luky");
 });
 ```
 12. Проверить, что параметр age имеет значение 4.
 ```javascript
 pm.test("Age equals 4", () => {
-    	pm.expect(responseJson.family.pets.dog.age).to.eql(4);
+    pm.expect(responseJson.family.pets.dog.age).to.eql(4);
 });
 ```
 
@@ -164,7 +164,7 @@ params: name: str, age: int, salary: int)
 2. Статус код 200
 ```javascript
 pm.test("Status code is 200", () => {
-    	pm.response.to.have.status(200);
+    pm.response.to.have.status(200);
 });
 ```
 3. Спарсить response body в json.
@@ -178,13 +178,13 @@ var requestParams = pm.request.url.query.toObject();
 5. Проверить, что name в ответе равно name s request (name забрать из request.)
 ```javascript
 pm.test("Name from response equals name from request", () => {
-    	pm.expect(responseJson.name).to.eql(requestParams.name);
+    pm.expect(responseJson.name).to.eql(requestParams.name);
 });
 ```
 6. Проверить, что age в ответе равно age из request (age забрать из request.)
 ```javascript
 pm.test("Age from response equals Age from request", () => {
-    	pm.expect(responseJson.age).to.eql(parseInt(requestParams.age));
+    pm.expect(responseJson.age).to.eql(parseInt(requestParams.age));
 });
 ```
 7. Вывести в консоль параметр salary из request.
@@ -210,19 +210,19 @@ console.log("The third element of salary from request: " + responseJson.salary[2
 12. Проверить, что 0-й элемент параметра salary равен salary из request (salary забрать из request.)
 ```javascript
 pm.test("The first element of salary from response equals salary from request", () => {
-    	pm.expect(JSON.stringify(responseJson.salary[0])).to.eql(requestParams.salary);
+    pm.expect(JSON.stringify(responseJson.salary[0])).to.eql(requestParams.salary);
 })
 ```
 13. Проверить, что 1-й элемент параметра salary равен salary*2 из request (salary забрать из request.)
 ```javascript
 pm.test("The second element of salary from response equals salary*2 from request", () => {
-    	pm.expect(parseInt(responseJson.salary[1])).to.eql(parseInt(requestParams.salary) * 2);
+    pm.expect(parseInt(responseJson.salary[1])).to.eql(parseInt(requestParams.salary) * 2);
 })
 ```
 14. Проверить, что 2-й элемент параметра salary равен salary*3 из request (salary забрать из request.)
 ```javascript
 pm.test("The third element of salary from response equals salary*3 from request", () => {
-    	pm.expect(parseInt(responseJson.salary[2])).to.eql(parseInt(requestParams.salary) * 3);
+    pm.expect(parseInt(responseJson.salary[2])).to.eql(parseInt(requestParams.salary) * 3);
 })
 ```
 15. Создать в окружении переменную name
@@ -243,7 +243,7 @@ pm.environment.set("salary", requestParams.salary);
 21. Написать цикл который выведет в консоль по порядку элементы списка из параметра salary.
 ```javascript
 for (var i = 0; i < responseJson.salary.length; i++) {
-		console.log(responseJson.salary[i]);
+	console.log(responseJson.salary[i]);
 }
 ```
 
@@ -255,7 +255,7 @@ for (var i = 0; i < responseJson.salary.length; i++) {
 5. Статус код 200
 ```javascript
 pm.test("Status code is 200", () => {
-    	pm.response.to.have.status(200);
+    pm.response.to.have.status(200);
 });
 ```
 6. Спарсить response body в json.
@@ -269,90 +269,90 @@ var requestParams = pm.request.url.query.toObject();
 8. Проверить, что json response имеет параметр start_qa_salary
 ```javascript
 pm.test("Response has start_qa_salary parameter", () => {
-    	pm.expect(responseJson).to.have.property("start_qa_salary");
+    pm.expect(responseJson).to.have.property("start_qa_salary");
 });
 ```
 9. Проверить, что json response имеет параметр qa_salary_after_6_months
 ```javascript
 pm.test("Response has qa_salary_after_6_months parameter", () => {
-    	pm.expect(responseJson).to.have.property("qa_salary_after_6_months");
+    pm.expect(responseJson).to.have.property("qa_salary_after_6_months");
 });
 ```
 10. Проверить, что json response имеет параметр qa_salary_after_12_months
 ```javascript
 pm.test("Response has qa_salary_after_12_months parameter", () => {
-    	pm.expect(responseJson).to.have.property("qa_salary_after_12_months");
+    pm.expect(responseJson).to.have.property("qa_salary_after_12_months");
 });
 ```
 11. Проверить, что json response имеет параметр qa_salary_after_1.5_year
 ```javascript
 pm.test("Response has qa_salary_after_1.5_year parameter", () => {
-    	pm.expect(responseJson).to.have.property("qa_salary_after_1.5_year");
+    pm.expect(responseJson).to.have.property("qa_salary_after_1.5_year");
 });
 ```
 12. Проверить, что json response имеет параметр qa_salary_after_3.5_years
 ```javascript
 pm.test("Response has qa_salary_after_3.5_years parameter", () => {
-    	pm.expect(responseJson).to.have.property("qa_salary_after_3.5_years");
+    pm.expect(responseJson).to.have.property("qa_salary_after_3.5_years");
 });
 ```
 13. Проверить, что json response имеет параметр person
 ```javascript
 pm.test("Response has person parameter", () => {
-    	pm.expect(responseJson).to.have.property("person");
+    pm.expect(responseJson).to.have.property("person");
 });
 ```
 14. Проверить, что параметр start_qa_salary равен salary из request (salary забрать из request.)
 ```javascript
 pm.test("start_qa_salary from response equals start_qa_salary from request", () => {
-    	pm.expect(responseJson.start_qa_salary).to.eql(parseInt(requestParams.salary));
+    pm.expect(responseJson.start_qa_salary).to.eql(parseInt(requestParams.salary));
 });
 ```
 15. Проверить, что параметр qa_salary_after_6_months равен salary*2 из request (salary забрать из request.)
 ```javascript
 pm.test("qa_salary_after_6_months from response equals salary*2 from request", () => {
-    	pm.expect(responseJson.qa_salary_after_6_months).to.eql(parseInt(requestParams.salary) * 2);
+    pm.expect(responseJson.qa_salary_after_6_months).to.eql(parseInt(requestParams.salary) * 2);
 });
 ```
 16. Проверить, что параметр qa_salary_after_12_months равен salary*2.7 из request (salary забрать из request.)
 ```javascript
 pm.test("qa_salary_after_12_months from response equals salary*2.7 from request", () => {
-    	pm.expect(responseJson.qa_salary_after_12_months).to.eql(parseInt(requestParams.salary) * 2.7);
+    pm.expect(responseJson.qa_salary_after_12_months).to.eql(parseInt(requestParams.salary) * 2.7);
 });
 ```
 17. Проверить, что параметр qa_salary_after_1.5_year равен salary*3.3 из request (salary забрать из request.)
 ```javascript
 pm.test("qa_salary_after_1.5_year from response equals salary*3.3 from request", () => {
-    	pm.expect(responseJson).to.have.property("qa_salary_after_1.5_year").to.eql(parseInt(requestParams.salary) * 3.3);
+    pm.expect(responseJson).to.have.property("qa_salary_after_1.5_year").to.eql(parseInt(requestParams.salary) * 3.3);
 });
 ```
 18. Проверить, что параметр qa_salary_after_3.5_years равен salary*3.8 из request (salary забрать из request.)
 ```javascript
 pm.test("qa_salary_after_3.5_years from response equals salary*3.8 from request", () => {
-    	pm.expect(responseJson).to.have.property("qa_salary_after_3.5_years").to.eql(parseInt(requestParams.salary) * 3.8);
+    pm.expect(responseJson).to.have.property("qa_salary_after_3.5_years").to.eql(parseInt(requestParams.salary) * 3.8);
 });
 ```
 19. Проверить, что в параметре person, 1-й элемент из u_name равен salary из request (salary забрать из request.)
 ```javascript
 pm.test("The first (actually the second) element from u_name equals salary from request", () => {
-    	pm.expect(responseJson.person.u_name[1]).to.eql(parseInt(requestParams.salary));
+    pm.expect(responseJson.person.u_name[1]).to.eql(parseInt(requestParams.salary));
 });
 ```
 20. Проверить, что что параметр u_age равен age из request (age забрать из request.)
 ```javascript
 pm.test("u_age equals age from request", () => {
-    	pm.expect(responseJson.person.u_age).to.eql(parseInt(requestParams.age));
+    pm.expect(responseJson.person.u_age).to.eql(parseInt(requestParams.age));
 });
 ```
 21. Проверить, что параметр u_salary_5_years равен salary*4.2 из request (salary забрать из request.)
 ```javascript
 pm.test("u_salary_5_years from response equals salary*4.2 from request", () => {
-    	pm.expect(responseJson.person.u_salary_5_years).to.eql(parseInt(requestParams.salary) * 4.2);
+    pm.expect(responseJson.person.u_salary_5_years).to.eql(parseInt(requestParams.salary) * 4.2);
 });
 ```
 22. ** *Написать цикл который выведет в консоль по порядку элементы списка из параметра person.**
 ```javascript
 for (const key in responseJson.person) {
-    	console.log(`${key}: ${responseJson.person[key]}`);
+    console.log(`${key}: ${responseJson.person[key]}`);
 }
 ```
