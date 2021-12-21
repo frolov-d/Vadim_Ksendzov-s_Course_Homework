@@ -505,8 +505,11 @@
 					"script": {
 						"exec": [
 							"var responseData = pm.response.json();\r",
-							"var random_cur_id = Math.floor(Math.random() * responseData.length);\r",
+							"var array_length = responseData.length;\r",
+							"var random_array_element = responseData[Math.floor(Math.random() * array_length)];\r",
+							"var random_cur_id = random_array_element.Cur_ID;\r",
 							"// console.log(random_cur_id);\r",
+							"\r",
 							"pm.environment.set(\"curr_code\", random_cur_id);"
 						],
 						"type": "text/javascript"

@@ -22,7 +22,7 @@ name: str
 auth_token
 
 resp.
-```json
+```javascript
 {'start_qa_salary':salary,
  'qa_salary_after_6_months': salary * 2,
  'qa_salary_after_12_months': salary * 2.9,
@@ -40,7 +40,7 @@ pm.test("Status code is 200", () => {
 });
 ```
 2) Проверка структуры json в ответе.
-```json
+```javascript
 var schema = {
   "type": "object",
   "properties": {
@@ -396,8 +396,11 @@ Resp. Передаётся список массив объектов.
 В объекте возьмите Cur_ID и передать через окружение в следующий запрос.
 ```javascript
 var responseData = pm.response.json();
-var random_cur_id = Math.floor(Math.random() * responseData.length);
+var array_length = responseData.length;
+var random_array_element = responseData[Math.floor(Math.random() * array_length)];
+var random_cur_id = random_array_element.Cur_ID;
 // console.log(random_cur_id);
+
 pm.environment.set("curr_code", random_cur_id);
 ```
 
