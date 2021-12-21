@@ -377,6 +377,7 @@ POST
 auth_token
 
 Resp. Передаётся список массив объектов.
+```javascript
 [
 {"Cur_Abbreviation": str,
  "Cur_ID": int,
@@ -388,14 +389,19 @@ Resp. Передаётся список массив объектов.
  "Cur_Name": str
 }
 ]
+```
 
 Тесты:
 1) Можете взять любой объект из присланного списка, используйте js random.
 В объекте возьмите Cur_ID и передать через окружение в следующий запрос.
+```javascript
+var responseData = pm.response.json();
+var random_cur_id = Math.floor(Math.random() * responseData.length);
+// console.log(random_cur_id);
+pm.environment.set("curr_code", random_cur_id);
+```
 
- ===================
-
-7) http://162.55.220.72:5005/curr_byn
+###### 7) http://162.55.220.72:5005/curr_byn
 req.
 POST
 auth_token
