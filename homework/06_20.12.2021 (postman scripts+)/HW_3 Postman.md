@@ -411,6 +411,7 @@ auth_token
 curr_code: int
 
 Resp.
+```javascript
 {
     "Cur_Abbreviation": str
     "Cur_ID": int,
@@ -419,20 +420,62 @@ Resp.
     "Cur_Scale": int,
     "Date": str
 }
+```
 
 Тесты:
 1) Статус код 200
+```javascript
+pm.test("Status code is 200", () => {
+    pm.response.to.have.status(200);
+});
+```
 2) Проверка структуры json в ответе.
-
-
-===============
-***
+```javascript
+var schema = {
+  "type": "object",
+  "properties": {
+    "Cur_Abbreviation": {
+      "type": "string"
+    },
+    "Cur_ID": {
+      "type": "integer"
+    },
+    "Cur_Name": {
+      "type": "string"
+    },
+    "Cur_OfficialRate": {
+      "type": "number"
+    },
+    "Cur_Scale": {
+      "type": "integer"
+    },
+    "Date": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Cur_Abbreviation",
+    "Cur_ID",
+    "Cur_Name",
+    "Cur_OfficialRate",
+    "Cur_Scale",
+    "Date"
+  ]
+};
+```
+```javascript
+pm.test("Validate schema", () => {
+    pm.response.to.have.jsonSchema(schema);
+});
+```
+\*\*\*
 1) получить список валют
 2) итерировать список валют
 3) в каждой итерации отправлять запрос на сервер для получения курса каждой валюты
 4) если возвращается 500 код, переходим к следующей итреации
 5) если получаем 200 код, проверяем response json на наличие поля "Cur_OfficialRate"
-6) если поле есть, пишем в консоль инфу про фалюту в виде response
+6) если поле есть, пишем в консоль инфу про валюту в виде response
+```javascript
 {
     "Cur_Abbreviation": str
     "Cur_ID": int,
@@ -441,4 +484,43 @@ Resp.
     "Cur_Scale": int,
     "Date": str
 }
+```
 7) переходим к следующей итерации
+
+Решение:
+Запрос на http://162.55.220.72:5005/currency
+```javascript
+var responseData = pm.response.json();
+
+var cur_id_array = [];
+
+for (var i = 0; i < responseData.length; i++) {
+    cur_id_array.push(responseData[i].Cur_ID)
+};
+
+for (var i = 0; i < cur_id_array.length; i++) {
+    var requestInfo = {
+        url: 'http://162.55.220.72:5005/curr_byn',
+        method: 'POST',
+        header: {
+            'Content-Type': 'multipart/form-data',
+            'Connection': 'keep-alive',
+        },
+        body: {
+            mode: 'formdata',
+            formdata: [
+                {key: "auth_token", value: pm.environment.get("auth_token")},
+                {key: "curr_code", value: cur_id_array[i]}
+            ]
+        },
+    };
+    pm.sendRequest(requestInfo, (error, response) => {
+        if (response.code != 200) {
+        } else {
+            var responseData = response.json();
+            // console.log(responseData);
+            console.log("Курс " + responseData["Cur_Name"] + ": " + responseData["Cur_OfficialRate"]);
+        };
+    });
+};
+```

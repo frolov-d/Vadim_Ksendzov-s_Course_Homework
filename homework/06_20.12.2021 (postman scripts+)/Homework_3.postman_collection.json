@@ -510,7 +510,39 @@
 							"var random_cur_id = random_array_element.Cur_ID;\r",
 							"// console.log(random_cur_id);\r",
 							"\r",
-							"pm.environment.set(\"curr_code\", random_cur_id);"
+							"pm.environment.set(\"curr_code\", random_cur_id);\r",
+							"\r",
+							"var cur_id_array = [];\r",
+							"\r",
+							"for (var i = 0; i < responseData.length; i++) {\r",
+							"    cur_id_array.push(responseData[i].Cur_ID)\r",
+							"};\r",
+							"\r",
+							"for (var i = 0; i < cur_id_array.length; i++) {\r",
+							"    var requestInfo = {\r",
+							"        url: 'http://162.55.220.72:5005/curr_byn',\r",
+							"        method: 'POST',\r",
+							"        header: {\r",
+							"            'Content-Type': 'multipart/form-data',\r",
+							"            'Connection': 'keep-alive',\r",
+							"        },\r",
+							"        body: {\r",
+							"            mode: 'formdata',\r",
+							"            formdata: [\r",
+							"                {key: \"auth_token\", value: pm.environment.get(\"auth_token\")},\r",
+							"                {key: \"curr_code\", value: cur_id_array[i]}\r",
+							"            ]\r",
+							"        },\r",
+							"    };\r",
+							"    pm.sendRequest(requestInfo, (error, response) => {\r",
+							"        if (response.code != 200) {\r",
+							"        } else {\r",
+							"            var responseData = response.json();\r",
+							"            // console.log(responseData);\r",
+							"            console.log(\"Курс \" + responseData[\"Cur_Name\"] + \": \" + responseData[\"Cur_OfficialRate\"]);\r",
+							"        };\r",
+							"    });\r",
+							"};"
 						],
 						"type": "text/javascript"
 					}
@@ -536,6 +568,89 @@
 					],
 					"path": [
 						"currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "curr_byn",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"type\": \"object\",\r",
+							"  \"properties\": {\r",
+							"    \"Cur_Abbreviation\": {\r",
+							"      \"type\": \"string\"\r",
+							"    },\r",
+							"    \"Cur_ID\": {\r",
+							"      \"type\": \"integer\"\r",
+							"    },\r",
+							"    \"Cur_Name\": {\r",
+							"      \"type\": \"string\"\r",
+							"    },\r",
+							"    \"Cur_OfficialRate\": {\r",
+							"      \"type\": \"number\"\r",
+							"    },\r",
+							"    \"Cur_Scale\": {\r",
+							"      \"type\": \"integer\"\r",
+							"    },\r",
+							"    \"Date\": {\r",
+							"      \"type\": \"string\"\r",
+							"    }\r",
+							"  },\r",
+							"  \"required\": [\r",
+							"    \"Cur_Abbreviation\",\r",
+							"    \"Cur_ID\",\r",
+							"    \"Cur_Name\",\r",
+							"    \"Cur_OfficialRate\",\r",
+							"    \"Cur_Scale\",\r",
+							"    \"Date\"\r",
+							"  ]\r",
+							"};\r",
+							"\r",
+							"pm.test(\"Validate schema\", () => {\r",
+							"    pm.response.to.have.jsonSchema(schema);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "auth_token",
+							"value": "{{auth_token}}",
+							"type": "text"
+						},
+						{
+							"key": "curr_code",
+							"value": "{{curr_code}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/curr_byn",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"curr_byn"
 					]
 				}
 			},
