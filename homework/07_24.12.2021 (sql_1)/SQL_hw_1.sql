@@ -114,7 +114,7 @@ where id > 180 and id < 190;
 -- 25. Вывести пользователя у которых id между 180 и 190
 select name
 from students s 
-where id > 180 and id < 190;
+where id between 180 and 190;
 
 -- 26. Вывести пользователей где password равен 12333, 1m313, 123313
 select name
