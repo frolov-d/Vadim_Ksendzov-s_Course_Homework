@@ -6,3 +6,4 @@ Homeworks from Practical Software QA Testing Course by Vadim Ksendzov: [ksendzov
 - Git
 - Postman
 - SQL
+- DevTools
