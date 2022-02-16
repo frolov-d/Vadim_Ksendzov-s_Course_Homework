@@ -53,3 +53,5 @@ GET
 name: str
 age: int
 salary: int`
+
+Отчёт о нагрузке на [50 потоков](./summary_50.csv), на [250 потоков](./summary_250.csv), на 500 потоков ([1](./summary_500_01.csv), [2](./summary_500_02.csv)).
