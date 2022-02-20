@@ -17,7 +17,7 @@ Success
 ```shell
 /sdcard/Download/screen02.png: 1 file pulled, 0 skipped. 3.9 MB/s (14037 bytes in 0.003s)
 ```
-![screenshot](https://raw.githubusercontent.com/frolov-d/Vadim_Ksendzov-s_Course_Homework/main/15_20.02.2022%20(adb)/screen01.png)
+<img src="https://raw.githubusercontent.com/frolov-d/Vadim_Ksendzov-s_Course_Homework/main/15_20.02.2022%20(adb)/screen01.png" height="500" />
 5. Вывести в консоль логи приложения todolist: `adb logcat | findstr "com.android.todolist"`
 ```shell
 ...
