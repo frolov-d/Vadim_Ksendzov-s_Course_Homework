@@ -1,29 +1,24 @@
 # ADB HW_1
 
 1. Отобразить подключённый девайс в консоли: `adb devices`
-Результат:
 ```shell
 Success
 ```
 2. Вывести адрес приложения todolist в системе Android: `adb shell cmd package list packages | findstr "com.android.todolist"` или `adb shell 'pm list packages -f' | findstr "com.android.todolist"`
-Результат:
 ```shell
 package:com.android.todolist
 ```
 3. Установить .apk файл приложениия todolist на телефон с компьютера через  ADB: `adb install D:\Dwnldd\todolist.apk`
-Результат:
 ```shell
 Performing Streamed Install
 Success
 ```
 4. Сделать скриншот запущенного приложения todolist и сразу скопировать на компьютер в одной команде: `adb shell screencap -p /sdcard/Download/screen01.png && adb pull /sdcard/Download/screen01.png D:\Dwnldd`
-Результат:
 ```shell
 /sdcard/Download/screen02.png: 1 file pulled, 0 skipped. 3.9 MB/s (14037 bytes in 0.003s)
 ```
-![screenshot](/screen01.png)
+![screenshot](https://raw.githubusercontent.com/frolov-d/Vadim_Ksendzov-s_Course_Homework/main/15_20.02.2022%20(adb)/screen01.png)
 5. Вывести в консоль логи приложения todolist: `adb logcat | findstr "com.android.todolist"`
-Результат:
 ```shell
 ...
 02-20 11:28:52.620  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
@@ -38,7 +33,6 @@ Success
 6. Скопировать логи приложения todolist на компьютер: `adb logcat | findstr "com.android.todolist" > D:\Dwnldd\todolist.log`
 [Ссылка](./todolist.log) на логи
 7. Удалить приложение todolist с телефона через ADB: `adb uninstall "com.android.todolist"`
-Результат:
 ```shell
 Success
 ```
