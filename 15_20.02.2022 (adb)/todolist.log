@@ -1,0 +1,192 @@
+02-20 11:23:17.792 20390 20390 V ActivityThread: Skipping new config:{1.0 250mcc20mnc [en_GB,ru_RU] ldltr sw423dp w423dp h768dp 408dpi nrml long port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=Rect(0, 0 - 1080, 2032) mWindowingMode=fullscreen mActivityType=undefined} nonFullScreen=0 suim:4 s.10}, config:{1.0 250mcc20mnc [en_GB,ru_RU] ldltr sw423dp w423dp h768dp 408dpi nrml long port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=Rect(0, 0 - 1080, 2032) mWindowingMode=fullscreen mActivityType=undefined} nonFullScreen=0 suim:4 s.10} for app:com.android.todolist
+02-20 11:23:18.471 20390 20390 D ActivityThread: add activity client record, r= ActivityRecord{56720d4 token=android.os.BinderProxy@5169089 {com.android.todolist/com.android.todolist.MainActivity}} token= android.os.BinderProxy@5169089
+02-20 11:23:18.534  1725  8405 I HidataAppQoeP: foregroundUidAdd uid: 10217 name: com.android.todolist activity state: true
+02-20 11:23:18.537  1725  8405 I HidataAppQoeP: sendKernelAppUid, Uid = 10217, period = 2000 name = com.android.todolist
+02-20 11:23:47.172  1725  8405 I HidataAppQoeP: foregroundUidRemove uid: 10217 name: com.android.todolist
+02-20 11:23:47.600 20390 20390 V ActivityThread: Handle window ActivityRecord{56720d4 token=android.os.BinderProxy@5169089 {com.android.todolist/com.android.todolist.MainActivity}} visibility: false
+02-20 11:26:26.259  1725  8405 I HidataAppQoeP: foregroundUidAdd uid: 10217 name: com.android.todolist activity state: true
+02-20 11:26:26.265  1725  8405 I HidataAppQoeP: sendKernelAppUid, Uid = 10217, period = 2000 name = com.android.todolist
+02-20 11:26:57.981  1725  8405 I HidataAppQoeP: foregroundUidRemove uid: 10217 name: com.android.todolist
+02-20 11:26:58.392 20390 20390 V ActivityThread: Handle window ActivityRecord{56720d4 token=android.os.BinderProxy@5169089 {com.android.todolist/com.android.todolist.MainActivity}} visibility: false
+02-20 11:27:22.764  1725  8405 I HidataAppQoeP: foregroundUidAdd uid: 10217 name: com.android.todolist activity state: true
+02-20 11:27:22.768  1725  8405 I HidataAppQoeP: sendKernelAppUid, Uid = 10217, period = 2000 name = com.android.todolist
+02-20 11:27:42.869 20390 20692 D HiTouch_PressGestureDetector: onAttached, package=com.android.todolist, windowType=2, mHiTouchRestricted=true
+02-20 11:28:17.217  1725  8405 I HidataAppQoeP: foregroundUidRemove uid: 10217 name: com.android.todolist
+02-20 11:28:17.623 20390 20390 V ActivityThread: Handle window ActivityRecord{56720d4 token=android.os.BinderProxy@5169089 {com.android.todolist/com.android.todolist.MainActivity}} visibility: false
+02-20 11:28:17.812   683   727 D iTouchService: itouch currentPackageName=com.android.todolist
+02-20 11:28:17.812   683   727 D iTouchService: itouch:app com.android.todolist is  not game app
+02-20 11:28:52.129  1267  3184 V WindowManager: notifyAppResumed: wasStopped=true AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:28:52.148  1267  1374 V WindowManager: Check opening app=AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}: allDrawn=false startingDisplayed=false startingMoved=false isRelaunching()=false startingWindow=Window{d6bbcb3 u0 SnapshotStartingWindow for taskId=678}
+02-20 11:28:52.158  1267  3184 V WindowManager: Check opening app=AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}: allDrawn=false startingDisplayed=false startingMoved=false isRelaunching()=false startingWindow=Window{d6bbcb3 u0 SnapshotStartingWindow for taskId=678}
+02-20 11:28:52.167  1267  1374 V WindowManager: Check opening app=AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}: allDrawn=false startingDisplayed=true startingMoved=false isRelaunching()=false startingWindow=Window{d6bbcb3 u0 SnapshotStartingWindow for taskId=678}
+02-20 11:28:52.190  1725  8405 I HidataAppQoeP: foregroundUidAdd uid: 10217 name: com.android.todolist activity state: true
+02-20 11:28:52.204  1725  8405 I HidataAppQoeP: sendKernelAppUid, Uid = 10217, period = 2000 name = com.android.todolist
+02-20 11:28:52.243  1267  1374 V WindowManager_visibility: updateAllDrawn Add AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:28:52.245  1267  1374 V WindowManager_visibility: updateAllDrawn allDrawn=false interesting=1 drawn=1 relaunchCount=0 for AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:28:52.316  1267  2215 V HwPhoneWindowManager: updateSystemUiColorLw window=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity},EmuiStyle=0,StatusBarColor=0xff00574b,NavigationBarColor=0xff000000, mForceNotchStatusBar=false
+02-20 11:28:52.319  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:28:52.319   683   727 D iTouchService: itouch currentPackageName=com.android.todolist
+02-20 11:28:52.319   683   727 D iTouchService: itouch:app com.android.todolist is  not game app
+02-20 11:28:52.330  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:28:52.428  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:28:52.559  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:28:52.579  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:28:52.616  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:28:52.620  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:28:52.675  1267  1374 V WindowManager: Removing Window{d6bbcb3 u0 SnapshotStartingWindow for taskId=678} from AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:28:52.677  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:28:52.694  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:28:58.213  1792  2877 D ThermalTrace: saveRepeatData, app:com.android.todolist, shell:32,abient:-100
+02-20 11:29:24.057  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:24.058  1267  3889 V WindowManager: addWindow: Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:24.071 20390 21125 D HiTouch_PressGestureDetector: onAttached, package=com.android.todolist, windowType=2, mHiTouchRestricted=true
+02-20 11:29:24.118  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:24.118  1267  3889 V WindowManager_visibility: updateAllDrawn Add AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:29:24.119  1267  3889 V WindowManager_visibility: updateAllDrawn allDrawn=false interesting=1 drawn=1 relaunchCount=0 for AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:29:24.122  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:24.128   610   610 D SurfaceFlinger: duplicate layer name: changing com.android.todolist/com.android.todolist.MainActivity to com.android.todolist/com.android.todolist.MainActivity#1
+02-20 11:29:24.208  1267  1374 V WindowManager_visibility: updateAllDrawn Add AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:29:24.208  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:24.211  1267  1374 V WindowManager_visibility: updateAllDrawn allDrawn=false interesting=2 drawn=2 relaunchCount=0 for AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:29:24.216  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:24.967 20390 20390 I InputMethodManager: mServedView =com.android.todolist;view =com.android.todolist;flags =0
+02-20 11:29:25.164  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:25.207  1792  1936 I AppTypeRecognise: input start front pkg: com.android.todolist
+02-20 11:29:25.208  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:25.380  2210 17186 W okt     : Infinite Data has no result for com.android.todolist [CONTEXT service_id=177 ]
+02-20 11:29:25.409  2210 17187 W okt     : Infinite Data has no result for com.android.todolist [CONTEXT service_id=177 ]
+02-20 11:29:30.177  1267  3184 V WindowManager: removeIfPossible: Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:30.182  1267  3184 V WindowManager: Not removing Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity EXITING} due to exit animation 
+02-20 11:29:30.183  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:30.216  1792  1936 D AppTypeRecognise: input end-> front pkg: com.android.todolist duraion:5009 touchs:7
+02-20 11:29:30.273  1267  1374 V WindowManager: Exit animation finished in Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity EXITING}: remove=true
+02-20 11:29:30.274  1267  1374 E WindowManager: win=Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true
+02-20 11:29:30.276  1267  1374 V WindowManager: postWindowRemoveCleanupLocked: Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:30.276  1267  1374 V WindowManager: Removing Window{a655dc8 u0 com.android.todolist/com.android.todolist.MainActivity} from AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:29:30.281  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:30.312  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:30.328  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:30.391  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:31.266  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:31.267  1267  6108 V WindowManager: addWindow: Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:31.278 20390 21148 D HiTouch_PressGestureDetector: onAttached, package=com.android.todolist, windowType=2, mHiTouchRestricted=true
+02-20 11:29:31.312  1267  6108 V WindowManager_visibility: updateAllDrawn Add AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:29:31.312  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:31.313  1267  6108 V WindowManager_visibility: updateAllDrawn allDrawn=false interesting=1 drawn=1 relaunchCount=0 for AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:29:31.316  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:31.321   610   610 D SurfaceFlinger: duplicate layer name: changing com.android.todolist/com.android.todolist.MainActivity to com.android.todolist/com.android.todolist.MainActivity#1
+02-20 11:29:31.403  1267  1374 V WindowManager_visibility: updateAllDrawn Add AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:29:31.405  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:31.407  1267  1374 V WindowManager_visibility: updateAllDrawn allDrawn=false interesting=2 drawn=2 relaunchCount=0 for AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:29:31.417  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:32.064 20390 20390 I InputMethodManager: mServedView =com.android.todolist;view =com.android.todolist;flags =0
+02-20 11:29:32.147  2210 26056 W okt     : Infinite Data has no result for com.android.todolist [CONTEXT service_id=177 ]
+02-20 11:29:32.150  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:32.156  2210 21130 W okt     : Infinite Data has no result for com.android.todolist [CONTEXT service_id=177 ]
+02-20 11:29:32.191  1792  1936 I AppTypeRecognise: input start front pkg: com.android.todolist
+02-20 11:29:32.200  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:37.824  1267  8686 V WindowManager: removeIfPossible: Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:37.828  1267  8686 V WindowManager: Not removing Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity EXITING} due to exit animation 
+02-20 11:29:37.829  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:37.906  1792  1936 D AppTypeRecognise: input end-> front pkg: com.android.todolist duraion:5714 touchs:10
+02-20 11:29:37.928  1267  1374 V WindowManager: Exit animation finished in Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity EXITING}: remove=true
+02-20 11:29:37.928  1267  1374 E WindowManager: win=Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true
+02-20 11:29:37.930  1267  1374 V WindowManager: postWindowRemoveCleanupLocked: Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:37.930  1267  1374 V WindowManager: Removing Window{65a0e9 u0 com.android.todolist/com.android.todolist.MainActivity} from AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:29:37.934  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:38.001  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:38.053  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:38.881  1267  6108 I ActivityManager: START u0 {hwFlg=0x10 cmp=com.android.todolist/.ListActivity (has extras)} from uid 10217
+02-20 11:29:38.891  1267  6108 I ActivityManager: ActivityRecord info: ActivityInfo{8b5a701 com.android.todolist.ListActivity}
+02-20 11:29:38.891  1267  6108 I ActivityManager: isNeedToStartExSplash  callingPackage: com.android.todolist packageName: com.android.todolist
+02-20 11:29:38.891  1267  6108 I HwActivityManagerServiceEx: packageName:com.android.todolist,requestCode:-1,isIntercepted:false,userId:0
+02-20 11:29:38.891  1267  6108 I HwActivityManagerServiceEx: callingPackage:com.android.todolist
+02-20 11:29:38.896  1267  6108 V WindowManager: addAppToken: AppWindowToken{194f794 token=Token{d762fe7 ActivityRecord{a0099a6 u0 com.android.todolist/.ListActivity t678}}} controller={TaskWindowContainerController taskId=678} at 2147483647
+02-20 11:29:38.904  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:38.931  1267  8686 V ActivityManager: Making visible and scheduling visibility: ActivityRecord{a0099a6 u0 com.android.todolist/.ListActivity t678}
+02-20 11:29:38.945  1267  8686 V WindowManager: Check opening app=AppWindowToken{194f794 token=Token{d762fe7 ActivityRecord{a0099a6 u0 com.android.todolist/.ListActivity t678}}}: allDrawn=false startingDisplayed=false startingMoved=false isRelaunching()=false startingWindow=null
+02-20 11:29:38.946  1725  8405 D DollieActivityManagerAdapter: [Paused] pid:20390 uid:10217 ComponentInfo{com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:38.946  1725  8405 D DollieActivityManagerAdapter: [Paused] pid:20390 uid:10217 ComponentInfo{com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:38.948  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:38.953  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:38.954  1267  8686 V WindowManager: Check opening app=AppWindowToken{194f794 token=Token{d762fe7 ActivityRecord{a0099a6 u0 com.android.todolist/.ListActivity t678}}}: allDrawn=false startingDisplayed=false startingMoved=false isRelaunching()=false startingWindow=null
+02-20 11:29:38.978 20390 20390 V ActivityThread: Skipping new config:{1.0 250mcc20mnc [en_GB,ru_RU] ldltr sw423dp w423dp h768dp 408dpi nrml long port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=Rect(0, 0 - 1080, 2032) mWindowingMode=fullscreen mActivityType=undefined} nonFullScreen=0 suim:4 s.10}, config:{1.0 250mcc20mnc [en_GB,ru_RU] ldltr sw423dp w423dp h768dp 408dpi nrml long port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=Rect(0, 0 - 1080, 2032) mWindowingMode=fullscreen mActivityType=undefined} nonFullScreen=0 suim:4 s.10} for app:com.android.todolist
+02-20 11:29:39.102 20390 20390 D HwSplineOverScrollerExImpl: initSplineOverScrollerImpl paras: android.widget.OverScroller$SplineOverScroller@d7faf02,com.android.todolist.ListActivity@60b5131
+02-20 11:29:39.104 20390 20390 D HwSplineOverScrollerExImpl: initSplineOverScrollerImpl paras: android.widget.OverScroller$SplineOverScroller@9bdb94e,com.android.todolist.ListActivity@60b5131
+02-20 11:29:39.145 20390 20390 D ActivityThread: add activity client record, r= ActivityRecord{71216ca token=android.os.BinderProxy@ac3494a {com.android.todolist/com.android.todolist.ListActivity}} token= android.os.BinderProxy@ac3494a
+02-20 11:29:39.164  1267  8686 V WindowManager: addWindow: Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:39.167  1267  4419 D HiData_HwAPPQoEActivityMonitor: handleActivityChange,  curPackage:com.android.todolist, curClass:com.android.todolist.ListActivity
+02-20 11:29:39.167  1267  1424 D HiData_HwAPPQoEResourceMangerImpl: checkIsMonitorHiCureAppScence input :com.android.todolist
+02-20 11:29:39.167  1267  1488 D HiDATA_HiStream: activityResumed:pid=20390, uid=10217, component=ComponentInfo{com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:39.167  1267  1488 D HiData_HwAPPQoEResourceMangerImpl: checkIsMonitorVideoScence input :com.android.todolist,com.android.todolist.ListActivity
+02-20 11:29:39.167  1725  8405 D DollieActivityManagerAdapter: [Resumed] pid:20390 uid:10217 ComponentInfo{com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:39.167  1725  8405 E DollieAdapterService: notifyActivityState pkg:com.android.todolist/com.android.todolist.ListActivity state:2 fg:true mUid:10217
+02-20 11:29:39.167  1267  4419 D HiData_HwAPPQoEResourceMangerImpl: checkIsMonitorAPKScence input :com.android.todolist,com.android.todolist.ListActivity
+02-20 11:29:39.167  1267  4419 D HiData_HwAPPQoEResourceMangerImpl: checkIsMonitorAPKScence input :com.android.todolist,null
+02-20 11:29:39.167  1267  4419 D HiData_HwAPPQoEResourceMangerImpl: checkIsMonitorGameScence input :com.android.todolist
+02-20 11:29:39.167  1267  4419 D HiData_HwAPPQoEResourceMangerImpl: checkIsMonitorGameScence input :com.android.todolist
+02-20 11:29:39.186 20390 21163 D HiTouch_PressGestureDetector: onAttached, package=com.android.todolist, windowType=1, mHiTouchRestricted=true
+02-20 11:29:39.212  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity}
+02-20 11:29:39.213  1267  8686 V WindowManager: Check opening app=AppWindowToken{194f794 token=Token{d762fe7 ActivityRecord{a0099a6 u0 com.android.todolist/.ListActivity t678}}}: allDrawn=false startingDisplayed=false startingMoved=false isRelaunching()=false startingWindow=null
+02-20 11:29:39.219  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:39.260  1267  1374 V WindowManager: Check opening app=AppWindowToken{194f794 token=Token{d762fe7 ActivityRecord{a0099a6 u0 com.android.todolist/.ListActivity t678}}}: allDrawn=false startingDisplayed=false startingMoved=false isRelaunching()=false startingWindow=null
+02-20 11:29:39.320  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:39.323  1267  1374 V WindowManager: Check opening app=AppWindowToken{194f794 token=Token{d762fe7 ActivityRecord{a0099a6 u0 com.android.todolist/.ListActivity t678}}}: allDrawn=false startingDisplayed=false startingMoved=false isRelaunching()=false startingWindow=null
+02-20 11:29:39.330  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:39.331  1267  1374 V WindowManager_visibility: updateAllDrawn Add AppWindowToken{194f794 token=Token{d762fe7 ActivityRecord{a0099a6 u0 com.android.todolist/.ListActivity t678}}}
+02-20 11:29:39.333  1267  1374 V WindowManager_visibility: updateAllDrawn allDrawn=false interesting=1 drawn=1 relaunchCount=0 for AppWindowToken{194f794 token=Token{d762fe7 ActivityRecord{a0099a6 u0 com.android.todolist/.ListActivity t678}}}
+02-20 11:29:39.333  1267  1374 V WindowManager: Check opening app=AppWindowToken{194f794 token=Token{d762fe7 ActivityRecord{a0099a6 u0 com.android.todolist/.ListActivity t678}}}: allDrawn=true startingDisplayed=false startingMoved=false isRelaunching()=false startingWindow=null
+02-20 11:29:39.355  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:39.364  1267  1303 I ActivityManager: Displayed com.android.todolist/.ListActivity: +421ms
+02-20 11:29:39.361  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:39.364  1267  1303 D ActivityManager: EVENT_APP_ACTIVITY_DISPLAYED_FINISH reportData: com.android.todolist/.ListActivity 20390 421
+02-20 11:29:39.420  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:39.486  1267  8686 V WindowManager: notifyAppStopped: AppWindowToken{fe67e2d token=Token{cbfbd44 ActivityRecord{4febe57 u0 com.android.todolist/.MainActivity t678}}}
+02-20 11:29:39.486  1267  8686 E WindowManager: win=Window{f2c4670 u0 com.android.todolist/com.android.todolist.MainActivity} destroySurfaces: appStopped=true win.mWindowRemovalAllowed=false win.mRemoveOnExit=false
+02-20 11:29:40.344 20390 20390 I InputMethodManager: mServedView =com.android.todolist;view =com.android.todolist;flags =1
+02-20 11:29:40.434  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:40.459 20390 20390 I chatty  : uid=10217(com.android.todolist) identical 2 lines
+02-20 11:29:40.466  1792  1936 I AppTypeRecognise: input start front pkg: com.android.todolist
+02-20 11:29:40.486  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:40.525  2210 17187 W okt     : Infinite Data has no result for com.android.todolist [CONTEXT service_id=177 ]
+02-20 11:29:40.525  2210 21130 W okt     : Infinite Data has no result for com.android.todolist [CONTEXT service_id=177 ]
+02-20 11:29:40.531  2210 17186 W okt     : Infinite Data has no result for com.android.todolist [CONTEXT service_id=177 ]
+02-20 11:29:40.536  2210 17186 W okt     : Infinite Data has no result for com.android.todolist [CONTEXT service_id=177 ]
+02-20 11:29:40.895  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:40.899  1267  3185 W NotificationService: Toast already killed. pkg=com.android.todolist callback=android.app.ITransientNotification$Stub$Proxy@e015145
+02-20 11:29:40.899  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:40.964  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:40.968  1267  1374 I DebugKeepScreenOn: Releasing screen wakelock, obscured by Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:40.977  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:42.429  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:44.614  1792  1936 D AppTypeRecognise: input end-> front pkg: com.android.todolist duraion:4147 touchs:6
+02-20 11:29:44.708  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:44.739  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:44.793  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:45.690 20390 20390 I InputMethodManager: mServedView =com.android.todolist;view =com.android.todolist;flags =1
+02-20 11:29:45.742  1792  1936 I AppTypeRecognise: input start front pkg: com.android.todolist
+02-20 11:29:45.750  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:45.935  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:49.981  1792  1936 D AppTypeRecognise: input end-> front pkg: com.android.todolist duraion:4239 touchs:6
+02-20 11:29:50.093  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:50.126  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:50.180  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:52.340  1267  8686 I ActivityManager: START u0 {hwFlg=0x10 cmp=com.android.todolist/.MainActivity} from uid 10217
+02-20 11:29:52.341  1267  8686 I ActivityManager: ActivityRecord info: ActivityInfo{aaa3f0e com.android.todolist.MainActivity}
+02-20 11:29:52.342  1267  8686 I ActivityManager: isNeedToStartExSplash  callingPackage: com.android.todolist packageName: com.android.todolist
+02-20 11:29:52.342  1267  8686 I HwActivityManagerServiceEx: packageName:com.android.todolist,requestCode:-1,isIntercepted:false,userId:0
+02-20 11:29:52.342  1267  8686 I HwActivityManagerServiceEx: callingPackage:com.android.todolist
+02-20 11:29:52.346  1267  8686 V WindowManager: addAppToken: AppWindowToken{18704c5 token=Token{7a5f3c ActivityRecord{c874d2f u0 com.android.todolist/.MainActivity t678}}} controller={TaskWindowContainerController taskId=678} at 2147483647
+02-20 11:29:52.355  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:52.364  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:52.384  1267  8686 V ActivityManager: Making visible and scheduling visibility: ActivityRecord{c874d2f u0 com.android.todolist/.MainActivity t678}
+02-20 11:29:52.397  1267  8686 V WindowManager: Check opening app=AppWindowToken{18704c5 token=Token{7a5f3c ActivityRecord{c874d2f u0 com.android.todolist/.MainActivity t678}}}: allDrawn=false startingDisplayed=false startingMoved=false isRelaunching()=false startingWindow=null
+02-20 11:29:52.400  1725  8405 D DollieActivityManagerAdapter: [Paused] pid:20390 uid:10217 ComponentInfo{com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:52.404  1267  1293 I StatusBarDisable: setFlags what=0 which=1 pkg=Window{d93f900 u0 com.android.todolist/com.android.todolist.ListActivity}
+02-20 11:29:52.418 20390 20390 V ActivityThread: Skipping new config:{1.0 250mcc20mnc [en_GB,ru_RU] ldltr sw423dp w423dp h768dp 408dpi nrml long port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=Rect(0, 0 - 1080, 2032) mWindowingMode=fullscreen mActivityType=undefined} nonFullScreen=0 suim:4 s.10}, config:{1.0 250mcc20mnc [en_GB,ru_RU] ldltr sw423dp w423dp h768dp 408dpi nrml long port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=Rect(0, 0 - 1080, 2032) mWindowingMode=fullscreen mActivityType=undefined} nonFullScreen=0 suim:4 s.10} for app:com.android.todolist
+02-20 11:29:52.470 20390 20390 D HwSplineOverScrollerExImpl: initSplineOverScrollerImpl paras: android.widget.OverScroller$SplineOverScroller@7e0ebb0,com.android.todolist.MainActivity@b4beb0a
+02-20 11:29:52.473 20390 20390 D HwSplineOverScrollerExImpl: initSplineOverScrollerImpl paras: android.widget.OverScroller$SplineOverScroller@76112dc,com.android.todolist.MainActivity@b4beb0a
+02-20 11:29:52.474 20390 20390 D HwSplineOverScrollerExImpl: initSplineOverScrollerImpl paras: android.widget.OverScroller$SplineOverScroller@73d2aba,com.android.todolist.MainActivity@b4beb0a
+02-20 11:29:52.475 20390 20390 D HwSplineOverScrollerExImpl: initSplineOverScrollerImpl paras: android.widget.OverScroller$SplineOverScroller@55a80c8,com.android.todolist.MainActivity@b4beb0a
+02-20 11:29:52.494 20390 20390 D HwSplineOverScrollerExImpl: initSplineOverScrollerImpl paras: android.widget.OverScroller$SplineOverScroller@83c1547,com.android.todolist.MainActivity@b4beb0a
+02-20 11:29:52.495 20390 20390 D HwSplineOverScrollerExImpl: initSplineOverScrollerImpl paras: android.widget.OverScroller$SplineOverScroller@e3b869d,co
